@@ -9,8 +9,7 @@ def tripletsToFormTriangle(arr):
                     print(arr[first] , arr[second], arr[third])
                     tripletsToFormTriangle += 1
                     
-            second += 1  
-    
+            second += 1    
     
     return tripletsToFormTriangle
     
