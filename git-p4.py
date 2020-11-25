@@ -1,8 +1,5 @@
 #!/usr/bin/env python
 import sys
-if sys.version_info.major < 3 and sys.version_info.minor < 7:
-    sys.stderr.write("git-p4: requires Python 2.7 or later.\n")
-    sys.exit(1)
 import os
 import optparse
 import functools
