@@ -5,7 +5,7 @@
 # Author: Simon Hausmann <simon@lst.de>
 # Copyright: 2007 Simon Hausmann <simon@lst.de>
 #            2007 Trolltech ASA
-# License: MIT <http://www.opensource.org/licenses/mit-license.php>
+# License: MIT http://www.opensource.org/licenses/mit-license.php
 #
 # pylint: disable=invalid-name,missing-docstring,too-many-arguments,broad-except
 # pylint: disable=no-self-use,wrong-import-position,consider-iterating-dictionary
