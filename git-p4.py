@@ -4,7 +4,7 @@
 # Copyright: 2007 Simon Hausmann simon@lst.de
 # 2007 Trolltech ASA
 # License: MIT http://www.opensource.org/licenses/mit-license.php
-import sys
+# import sys
 import os
 import optparse
 import marshal
