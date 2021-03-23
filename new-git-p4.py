@@ -1,17 +1,3 @@
-#!/usr/bin/python
-# git-p4.py -- A tool for bidirectional operation between a Perforce depot and git.
-# Author: Simon Hausmann simon@lst.de
-# Copyright: 2007 Simon Hausmann simon@lst.de 2007 Trolltech ASA
-# License: MIT http://www.opensource.org/licenses/mit-license.php
-# pylint: disable=invalid-name,missing-docstring,too-many-arguments,broad-except
-# pylint: disable=no-self-use,wrong-import-position,consider-iterating-dictionary
-# pylint: disable=wrong-import-order,unused-import,too-few-public-methods
-# pylint: disable=too-many-lines,ungrouped-imports,fixme,too-many-locals
-# pylint: disable=line-too-long,bad-whitespace,superfluous-parens
-# pylint: disable=too-many-statements,too-many-instance-attributes
-# pylint: disable=too-many-branches,too-many-nested-blocks
-# import sys
-
 import os
 import optparse
 import functools
