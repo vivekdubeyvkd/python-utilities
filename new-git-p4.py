@@ -15,7 +15,7 @@
 # pylint: disable=too-many-statements,too-many-instance-attributes
 # pylint: disable=too-many-branches,too-many-nested-blocks
 #
-import sys
+#import sys
 import os
 import optparse
 import functools
