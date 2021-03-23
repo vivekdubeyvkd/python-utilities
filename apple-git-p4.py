@@ -2,8 +2,8 @@
 #
 # git-p4.py -- A tool for bidirectional operation between a Perforce depot and git.
 #
-# Author: Simon Hausmann <simon@lst.de>
-# Copyright: 2007 Simon Hausmann <simon@lst.de>
+# Author: Simon Hausmann simon@lst.de
+# Copyright: 2007 Simon Hausmann simon@lst.de
 #            2007 Trolltech ASA
 # License: MIT <http://www.opensource.org/licenses/mit-license.php>
 #
