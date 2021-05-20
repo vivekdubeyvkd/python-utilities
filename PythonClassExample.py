@@ -1,6 +1,6 @@
 class PythonClassExample:
   def __init__(self, author, age):
-    self.name = author
+    self.author = author
     self.age = age
     
 pythonClass = PythonClassExample("Vivek Dubey", 32)
