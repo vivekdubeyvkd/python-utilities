@@ -35,9 +35,13 @@ def validateJson(inputJsonfilePath):
         jsonContent = open(inputJsonfilePath,)
         try:
             json.load(jsonContent)
+            print("=========================== JSON validation succeeded ========================================")           
             print(inputJsonfilePath + " is a valid Json file")
+            print("=========================== JSON validation succeeded ========================================")           
         except ValueError as err:
+            print("=========================== JSON validation failed ========================================")
             print(inputJsonfilePath + " is an invalid Json file, kindly correct and rerun validation ...... ")
+            print("=========================== JSON validation failed ========================================")
             sys.exit(4)
     else:
         print("Input Json file ", inputJsonfilePath, " does not exist")
