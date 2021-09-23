@@ -7,7 +7,7 @@ import os
   Script Name : get_github_users_without_public_email.py
   Purpose     : To get all users on a GitHub org who has not updated their public email on their GitHub profile
   Usage       : to be run as
-                [python/python3] get_github_users_without_public_email.py [your GitHub org] [github user to be used for rest api calls] [GitHub PAT for github user to be used for rest api calls]
+                python3 get_github_users_without_public_email.py [your GitHub org] [github user to be used for rest api calls] [GitHub PAT for github user to be used for rest api calls]
                 GitHub PAT => GitHub personal access token with appropriate access in place to work with GitHub rest API calls
                 # script ignores the GitHub users in suspended state
                 
