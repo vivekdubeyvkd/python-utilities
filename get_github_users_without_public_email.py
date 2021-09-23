@@ -9,7 +9,8 @@ import os
   Usage       : to be run as
                 [python/python3] get_github_users_without_public_email.py [your GitHub org] [github user to be used for rest api calls] [GitHub PAT for github user to be used for rest api calls]
                 GitHub PAT => GitHub personal access token with appropriate access in place to work with GitHub rest API calls
-  Author      : Vivek Dubey(vivek_dubey@intuit.com)
+  Author      : Vivek Dubey
+  Copyright   : Intuit Inc @ 2021
 '''
 
 OUTPUT_FILE_PATH = "github_user_with_no_public_email.csv"
