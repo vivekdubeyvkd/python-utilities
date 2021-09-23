@@ -40,10 +40,8 @@ def checkUsersPublicEmail(userJson, githubUser, githubPwd):
         if userSpecificJSON["suspended_at"]:
             pass
         elif userSpecificJSON["email"]:
-            #print(userSpecificJSON["login"] + " " + userSpecificJSON["email"])
             OUTPUT_FILE.write(userSpecificJSON["login"] + "," + userSpecificJSON["email"] + "\n")
         else:
-            #print(userSpecificJSON["login"] + " " + "")
             OUTPUT_FILE.write(userSpecificJSON["login"] + "," +  "\n")
         OUTPUT_FILE.close()
         
