@@ -9,6 +9,7 @@ import os
   Usage       : to be run as
                 [python/python3] get_github_users_without_public_email.py [your GitHub org] [github user to be used for rest api calls] [GitHub PAT for github user to be used for rest api calls]
                 GitHub PAT => GitHub personal access token with appropriate access in place to work with GitHub rest API calls
+                # script ignores the GitHub users in suspended state
                 
                 ** First test this script in some testing environment to see how it behaves and then only start using it on any PROD environment **
                 
@@ -35,13 +36,14 @@ def checkUsersPublicEmail(userJson, githubUser, githubPwd):
     userApiURL = userJson['url']
     userSpecificJSON = call_api(userApiURL, githubUser, githubPwd)
     OUTPUT_FILE = open(OUTPUT_FILE_PATH, "a")
-    if userSpecificJSON and userSpecificJSON["email"]:
-        #print(userSpecificJSON["login"] + " " + userSpecificJSON["email"])
-        OUTPUT_FILE.write(userSpecificJSON["login"] + "," + userSpecificJSON["email"] + "\n")
-    else:
-        #print(userSpecificJSON["login"] + " " + "")
-        OUTPUT_FILE.write(userSpecificJSON["login"] + "," +  "\n")
-    OUTPUT_FILE.close()
+    if userSpecificJSON and "suspended_at" not in userSpecificJSON:
+        if  userSpecificJSON["email"]:
+            #print(userSpecificJSON["login"] + " " + userSpecificJSON["email"])
+            OUTPUT_FILE.write(userSpecificJSON["login"] + "," + userSpecificJSON["email"] + "\n")
+        else:
+            #print(userSpecificJSON["login"] + " " + "")
+            OUTPUT_FILE.write(userSpecificJSON["login"] + "," +  "\n")
+        OUTPUT_FILE.close()
 
 def validateScriptArgs(scriptArgs):
     if scriptArgs and len(scriptArgs) == 3:
