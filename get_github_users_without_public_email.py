@@ -18,7 +18,7 @@ import os
 '''
 
 OUTPUT_FILE_PATH = "github_user_with_no_public_email.csv"
-GITHUB_API_URL = 'https://api.github.com//api/v3/orgs/'
+GITHUB_API_URL = 'https://api.github.com/api/v3/orgs/'
 
 def call_api(apiURL, githubUser, githubPwd):
     try:
