@@ -36,14 +36,17 @@ def checkUsersPublicEmail(userJson, githubUser, githubPwd):
     userApiURL = userJson['url']
     userSpecificJSON = call_api(userApiURL, githubUser, githubPwd)
     OUTPUT_FILE = open(OUTPUT_FILE_PATH, "a")
-    if userSpecificJSON and "suspended_at" not in userSpecificJSON:
-        if  userSpecificJSON["email"]:
+    if userSpecificJSON:
+        if userSpecificJSON["suspended_at"]:
+            pass
+        elif userSpecificJSON["email"]:
             #print(userSpecificJSON["login"] + " " + userSpecificJSON["email"])
             OUTPUT_FILE.write(userSpecificJSON["login"] + "," + userSpecificJSON["email"] + "\n")
         else:
             #print(userSpecificJSON["login"] + " " + "")
             OUTPUT_FILE.write(userSpecificJSON["login"] + "," +  "\n")
         OUTPUT_FILE.close()
+        
 
 def validateScriptArgs(scriptArgs):
     if scriptArgs and len(scriptArgs) == 3:
