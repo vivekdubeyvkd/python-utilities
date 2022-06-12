@@ -1,4 +1,5 @@
-inputStr = "abacdec"
+inputStr1 = "abacdec"
+inputStr2 = "aaaa"
 
 def findMinSubstring(inpStr):
 	counter = 0
@@ -17,4 +18,5 @@ def findMinSubstring(inpStr):
 	return 	uniqueSubStringCount
 	
 
-print(findMinSubstring(inputStr))			
+print(findMinSubstring(inputStr1))			
+print(findMinSubstring(inputStr2))		
