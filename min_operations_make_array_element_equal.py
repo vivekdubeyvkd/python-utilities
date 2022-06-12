@@ -3,14 +3,14 @@ inList2 = [10,10,10]
 inList3 = [1,1,3,4,4,4]
 
 def minOperations(inputList):
-	map = dict.fromkeys(inputList, 0)
+	myMap = dict.fromkeys(inputList, 0)
 	minMoves = 0
 	listLen = len(inputList)
 	for i in range(listLen):
-		map[inputList[i]] += 1		
-	print(map)
+		myMap[inputList[i]] += 1		
+	print(myMap)
 
-	for key, value in map.items():
+	for key, value in myMap.items():
 		x = key 
 		freq = value 
 		if x <= freq: 
