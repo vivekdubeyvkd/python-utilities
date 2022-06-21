@@ -1,7 +1,6 @@
 outputDict = {}
 
 def getUniqueCharacter(s):
-    # Write your code here
     for i in range(len(s)):
         charVal = s[i]
         if charVal not in outputDict.keys():
